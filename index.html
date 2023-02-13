@@ -9,23 +9,54 @@
     <script type="text/javascript" defer src=".\long.js"></script>
 </head>
 <body>
-    <div id="showCaseDiv">
-        <img id="mainShowcase" src=".\devImages\mainCover.jpg" alt="showCaseImage" />
-    </div>
-
-    <div id="midLinksContainer">
-        <div id="allDivParent">
-            <div id="fbLink" class="midLinks">
-                <div class="category active">All</div>/
-                <div class="category">Graphic Design</div>/
-                <div class="category">Layout</div>/
-                <div class="category">Photo Manipulation</div>/
-                <div class="category">Ads</div>/
-                <div class="category">Crafts</div>
-            </div>
+    <div id="menuContainer">
+        <div id="logo"><img id="logoImage" src=".\devImages\myLogo.png" alt="myLogo" /></div>
+        <div id="myMenu">
+            <div class="menuTitle">About</div>
+            <div class="menuTitle">All Arts</div>
+            <div class="menuTitle">Fb Page</div>
         </div>
     </div>
+    <section id="slideShowSection">
+        <!-- slideshow starts -->
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
 
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img id="slide1" src=".\devImages\mainCover2.jpg" style="width:100%" alt="slide1">
+                <div class="text">List of Arts</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img id="slide2" src=".\devImages\mainCover.jpg" style="width:100%" alt="slide2">
+                <div class="text">Photo Manipulation</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img id="slide3" src=".\devImages\mainCover3.jpg" style="width:100%" alt="slide3">
+                <div class="text">Toolst</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <!-- slideshow end -->
+        <!-- put images on a div to have access to click event in javascript-->
+    </section>
     <div id="artsDivParent">
         <div id="show1">
             <img class="latestArts" src=".\devImages\PhotoRestoration.png" alt="template image" />
@@ -38,31 +69,62 @@
             <img id="Show3" class="latestArts" src=".\devImages\TshirtDesign.png" alt="template image" />
         </div>
 
-        <img id="Show4" class="latestArts" src=".\devImages\vector.png" alt="template image" />
-        <img id="Show5" class="latestArts" src=".\devImages\banner.png" alt="template image" />
-        <img id="Show6" class="latestArts" src=".\devImages\brochures.png" alt="template image" />
+        <div id="show4">
+            <img id="Show4" class="latestArts" src=".\devImages\vector.png" alt="template image" />
+        </div>
 
-        <img id="Show7" class="latestArts" src=".\devImages\sketchToVector.png" alt="template image" />
-        <img id="Show8" class="latestArts" src=".\devImages\fbCover.png" alt="template image" />
-        <img id="Show9" class="latestArts" src=".\devImages\tarp.png" alt="template image" />
+        <div id="show5">
+            <img id="Show5" class="latestArts" src=".\devImages\banner.png" alt="template image" />
+        </div>
 
-        <img id="Show10" class="latestArts" src=".\devImages\photoManipulation.png" alt="template image" />
-        <img id="Show11" class="latestArts" src=".\devImages\mockUp.png" alt="template image" />
-        <img id="Show12" class="latestArts" src=".\devImages\channelSeparation.png" alt="template image" />
+        <div id="show6">
+            <img id="Show6" class="latestArts" src=".\devImages\brochures.png" alt="template image" />
+        </div>
+
+        <div id="show7">
+            <img id="Show7" class="latestArts" src=".\devImages\sketchToVector.png" alt="template image" />
+        </div>
+
+        <div id="show8">
+            <img id="Show8" class="latestArts" src=".\devImages\fbCover.png" alt="template image" />
+        </div>
+
+        <div id="show9">
+            <img id="Show9" class="latestArts" src=".\devImages\tarp.png" alt="template image" />
+        </div>
+        <div id="show10">
+            <img id="Show10" class="latestArts" src=".\devImages\photoManipulation.png" alt="template image" />
+        </div>
+        <div id="show11">
+            <img id="Show11" class="latestArts" src=".\devImages\mockUp.png" alt="template image" />
+        </div>
+        <div id="show12">
+            <img id="Show12" class="latestArts" src=".\devImages\channelSeparation.png" alt="template image" />
+        </div>
     </div>
 
 
+    <!-- stories section, dito yung elements pup up after click-->
 
     <section id="stories">
 
         <div id="story1">
             <h1 class="storyH1">Photo Restoration</h1>
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Don't let your gold memories fades and gone forever...<br /> <br />
+
+                If you have old pictures and has many scratches or has a lot of damage to the image, i can fix that through photo restoration
+                in adobe photoshop.
+
+                Here at the image shown below you see the old image that's degraded and has a lot of damage, but i can still fix that manualy without using any enhancing software.
+
+                If you're looking for someone who can make the same as shown below you're in the right path.
+                don't hesitate to contact me through our email.
+
             </p>
             <img id="storyImg1" src=".\devImages\photoRestore1.png" alt="storyImg1" />
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                The other samples below are image from google its originaly no color and has a lot of noise, so i enhance it's color and add a little bit of details as long as possible.
             </p>
 
             <img id="storyImg2" src=".\devImages\photoRestore2.jpeg" alt="storyImg2" />
@@ -71,11 +133,12 @@
         <div id="story2">
             <h1 class="storyH1">Vexel Art</h1>
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Vexel art is a digital art that is an entirely pixel-based form of raster art that imitates the vector graphics technique, but is distinguished from normal vector graphics or raster images. “Vexel” itself is a mixture of two words 'Vector' and 'Pixel'. Vexel designs are composed by using multiple layer
+                <br /> <br />this is my recent project of vexel art, this image is taken from my android phone and draw it to adobe photoshop with layered shapes to anhanced and change the color the way i want it.
             </p>
             <img src=".\devImages\vexel1.jpeg" alt="storyImg1" />
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                The other pictures below is my progress of making vexel arts, it took years for me to enhance my skill as vector artist but in so many years passed by, im busy of studying programming while working in a comppany as a graphic artist.  that's why i stop creating this kind of arts.
             </p>
 
             <img src=".\devImages\vexelList.jpg" alt="storyImg2" />
@@ -84,25 +147,79 @@
         <div id="story3">
             <h1 class="storyH1">T-shirt Design</h1>
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                If someone ask me what part of graphic designing that i love to do the most?<br />
+                <br />
+                That is "T-shirt Designing", because everytime i make design concepts for clothing i always challenged to do my best and also i want to see someone
+                wearing my design which im very proud of.
             </p>
             <img src=".\devImages\tshirtShow.jpg" alt="storyImg1" />
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                The images shown below are my old arts for my red bubble store, all the design is based of my own concept.
+                Everytime i make t-shirt design it's always unique and original.
             </p>
 
             <img src=".\devImages\tshirtShowBanner.jpg" alt="storyImg2" />
         </div>
 
+        <div id="story4">
+            <h1 class="storyH1">Vector Illustrations</h1>
+            <p>
+                Aside from making t-shirt designs, i can also make vector illustrations<br />
+                <br />
+                I can make your sketch vectorized and ready for print even in large format without losing quality.
+            </p>
+            <img src=".\devImages\sketch0.jpeg" alt="storyImg4" />
+            <img src=".\devImages\sketch1.jpeg" alt="storyImg4" />
+            <img src=".\devImages\sketch1Vector.jpeg" alt="storyImg4" />
+            <p>
+                The images shown below are my old arts for my red bubble store, all the design is based of my own concept.
+                Everytime i make t-shirt design it's always unique and original.
+            </p>
+
+            <img src=".\devImages\tshirtShowBanner.jpg" alt="storyImg2" />
+        </div>
+
+
+        <div id="story5">
+            <h1 class="storyH1">Banner Layout</h1>
+            <p>
+                If you need and artist to make your facebook banner, youtube banner or ads etc....<br />
+                <br />
+                You're on a right place, because back when i was in advertising company, most of our clients project are these type of layout.<br />
+                So i confidently say that this type of job is part of my experties.
+            </p>
+            <img src=".\devImages\banner1.jpeg" alt="banner1" />
+            <img src=".\devImages\banner2.jpg" alt="banner2" />
+            <img src=".\devImages\banner3.jpg" alt="banner3" />
+        </div>
+
+        <div id="story6">
+            <h1 class="storyH1">Brochures Layout</h1>
+            <p>
+                I can make any kind of collaterals like brochures, menu, raffle tickets etc...<br />
+                <br />
+                raffle tickets is easy to make but why others struggles when it comes to printing?<br />
+                it is because they don't know the sequence layout for numbering.<br />
+                <br />
+                The same as making brochures or books, you need accurate page numbers to navigate pages even up to 1k or more pages.<br />
+                In this case i used software to auto numbering each pages accurately so you don't need to worry on number mistakes because it is software based.
+            </p>
+            <img src=".\devImages\brochureCover.jpeg" alt="banner1" />
+            <img src=".\devImages\rotary.png" alt="banner2" />
+            <img src=".\devImages\invitations.jpg" alt="banner3" />
+        </div>
+
     </section>
     <div id="closeStories">X</div>
 
-
-
     <section id="footerInfo">
         <div id="footerDiv1" class="footerDivs">
-            <h1>Who is Juan Salgarino?</h1>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            <h1>About Me</h1>
+            Hi Maam/Sir,<br />
+            <br />
+            I'm Juan Salgarino. A Graphic Artist from leyte with experience over 10+ years in this field.
+            I have the knowledge and skills to create eye-catching and quality products for you. I used adobe applications for
+            making a great design. If you need to build your design with full guidelines then you can hire me.
         </div>
         <div id="footerDiv2" class="footerDivs">
             <h1>What services he can offer?</h1>
