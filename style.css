@@ -358,7 +358,7 @@ html, body {
 
 /* mobile version*/
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1440px) {
     .text {
         font-size: 11px
     }
