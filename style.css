@@ -8,13 +8,11 @@ html, body {
     position: relative;
     width: auto;
     height: 100px;
-    margin: 15px 15px 3px 15px;
     padding-left: 13%;
     display: flex;
     justify-content: left;
-    background-color: antiquewhite;
+    background-color: #f1f1f1;
     border-bottom: solid 15px;
-    border-radius: 25px 25px 0px 0px;
 }
 
 #logoImage {
@@ -39,8 +37,7 @@ html, body {
 }
 
 #slideShowSection {
-    background-color: antiquewhite;
-    margin: 15px 15px 35px 15px;
+    background-color: #f1f1f1;
     padding: 35px 5% 20px 5%;
 }
 
@@ -161,7 +158,7 @@ html, body {
 #clickInstruction {
     text-align: center;
     padding: 1%;
-    width: 200px;
+    width: 20%;
     border-radius: 15px;
     box-shadow: 10px 10px 10px lightblue;
 }
@@ -382,9 +379,32 @@ html, body {
     height: auto;
 }
 
+/* about section */
+#aboutSection {
+    padding: 0px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+#aboutSection img {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+}
+#aboutShowCase {
+    display: none;
+}
+#aboutShowCase2 {
+    display: none;
+}
+
 #footerLinks {
     color: pink;
-    background-color: aliceblue;
+    background-color: white;
     padding-bottom: 15px;
 }
 

@@ -48,6 +48,7 @@ document.getElementById('closeStories').addEventListener('click', closeStoryFunc
 // main menu click event
 document.getElementById('mainArts').addEventListener('click', mainMenuArts);
 document.getElementById('mainHome').addEventListener('click', mainMenuHome);
+document.getElementById('mainAbout').addEventListener('click', mainMenuAbout);
 document.getElementById('mainVlogs').addEventListener('click', mainMenuVlogs);
 
 
@@ -63,17 +64,48 @@ document.getElementById('slide3').addEventListener('click', imagePop3);
 // menu arts switch
 function mainMenuArts() {
     document.getElementById('slideShowSection').style.display = 'none';
-    document.body.style.backgroundColor = 'black';
-    document.getElementById('clickInstruction').style.color = 'white';
+    document.getElementById('artsDivParent').style.display = 'flex';
+    document.getElementById('aboutShowCase').style.display = 'none';
+    document.getElementById('aboutShowCase2').style.display = 'none';
+    document.getElementById('clickInstruction').style.display = 'block';
+    document.body.style.backgroundColor = '#f1f1f1';
+    document.getElementById('clickInstruction').style.color = 'black';
+    document.getElementById('clickInstruction').style.marginTop = '15px';
     document.getElementById('footerInfo').style.backgroundColor = 'white';
+    document.getElementById('menuContainer').style.borderRadius = '0px';
+    document.getElementById('menuContainer').style.backgroundColor = 'white';
 
 }
 
+
+// menu home switch
 function mainMenuHome() {
     document.getElementById('slideShowSection').style.display = 'block';
+    document.getElementById('artsDivParent').style.display = 'flex';
+    document.getElementById('aboutShowCase').style.display = 'none';
+    document.getElementById('aboutShowCase2').style.display = 'none';
+    document.getElementById('clickInstruction').style.display = 'block';
     document.body.style.backgroundColor = 'white';
     document.getElementById('clickInstruction').style.color = 'black';
+    document.getElementById('menuContainer').style.backgroundColor = 'antiquewhite';
 }
+
+// menu about switch
+function mainMenuAbout() {
+    document.getElementById('slideShowSection').style.display = 'none';
+    document.getElementById('artsDivParent').style.display = 'none';
+    document.getElementById('clickInstruction').style.display = 'none';
+    document.getElementById('aboutShowCase').style.display = 'block';
+    document.getElementById('aboutShowCase2').style.display = 'block';
+
+    document.body.style.backgroundColor = '#f1f1f1';
+    document.getElementById('footerInfo').style.backgroundColor = 'white';
+    document.getElementById('footerInfo').style.marginTop = '15px';
+    document.getElementById('menuContainer').style.borderRadius = '0px';
+    document.getElementById('menuContainer').style.backgroundColor = 'white';
+}
+
+// menu vlog switch
 function mainMenuVlogs() {
     alert('you click the vlogs');
 }
