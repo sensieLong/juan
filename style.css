@@ -153,6 +153,19 @@ html, body {
 /* slideshow end */
 
 
+#clickInstructionContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#clickInstruction {
+    text-align: center;
+    padding: 1%;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px lightblue;
+}
+
 .globalText {
     color: pink;
     font-size: 32px;
@@ -238,7 +251,7 @@ html, body {
     display: none;
     height: 95%;
     width: 75%;
-    background-color: white;
+    background-color: black;
     border-radius: 30px;
     position: fixed;
     margin-left: auto;
@@ -264,6 +277,26 @@ html, body {
     width: 100%;
     height: auto;
 }
+
+
+/* showCase images pop up */
+#imagePopUp1 {
+    display: none;
+    height: 800px;
+    width: 100%;
+}
+#imagePopUp2 {
+    display: none;
+    height: 800px;
+    width: 100%;
+}
+#imagePopUp3 {
+    display: none;
+    height: 800px;
+    width: 100%;
+}
+
+/* story collections */
 
 #story1 {
     display: none;

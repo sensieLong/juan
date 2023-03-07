@@ -42,7 +42,67 @@ document.getElementById('show9').addEventListener('click', show9);
 document.getElementById('show10').addEventListener('click', show10);
 document.getElementById('show11').addEventListener('click', show11);
 document.getElementById('show12').addEventListener('click', show12);
+
 document.getElementById('closeStories').addEventListener('click', closeStoryFunction);
+
+// main menu click event
+document.getElementById('mainArts').addEventListener('click', mainMenuArts);
+document.getElementById('mainHome').addEventListener('click', mainMenuHome);
+document.getElementById('mainVlogs').addEventListener('click', mainMenuVlogs);
+
+
+// image click event
+
+document.getElementById('slide1').addEventListener('click', imagePop1);
+document.getElementById('slide2').addEventListener('click', imagePop2);
+document.getElementById('slide3').addEventListener('click', imagePop3);
+
+
+// functions
+
+// menu arts switch
+function mainMenuArts() {
+    document.getElementById('slideShowSection').style.display = 'none';
+    document.body.style.backgroundColor = 'black';
+    document.getElementById('clickInstruction').style.color = 'white';
+    document.getElementById('footerInfo').style.backgroundColor = 'white';
+
+}
+
+function mainMenuHome() {
+    document.getElementById('slideShowSection').style.display = 'block';
+    document.body.style.backgroundColor = 'white';
+    document.getElementById('clickInstruction').style.color = 'black';
+}
+function mainMenuVlogs() {
+    alert('you click the vlogs');
+}
+
+
+function imagePop1() {
+    document.getElementById('closeStories').style.display = 'block';
+    document.getElementById('stories').style.display = 'block';
+    document.getElementById('imagePopUp1').style.display = 'block';
+
+    document.getElementById('imagePopUp2').style.display = 'none';
+    document.getElementById('imagePopUp3').style.display = 'none';
+}
+function imagePop2() {
+    document.getElementById('closeStories').style.display = 'block';
+    document.getElementById('stories').style.display = 'block';
+    document.getElementById('imagePopUp2').style.display = 'block';
+
+    document.getElementById('imagePopUp1').style.display = 'none';
+    document.getElementById('imagePopUp3').style.display = 'none';
+}
+function imagePop3() {
+    document.getElementById('closeStories').style.display = 'block';
+    document.getElementById('stories').style.display = 'block';
+    document.getElementById('imagePopUp3').style.display = 'block';
+
+    document.getElementById('imagePopUp2').style.display = 'none';
+    document.getElementById('imagePopUp1').style.display = 'none';
+}
 
 function show1() {
     document.getElementById('closeStories').style.display = 'block';
@@ -105,6 +165,11 @@ function show12() {
     document.getElementById('story12').style.display = 'block';
 }
 function closeStoryFunction() {
+
+    document.getElementById('imagePopUp1').style.display = 'none';
+    document.getElementById('imagePopUp2').style.display = 'none';
+    document.getElementById('imagePopUp3').style.display = 'none';
+
     document.getElementById('closeStories').style.display = 'none';
     document.getElementById('stories').style.display = 'none';
     document.getElementById('story1').style.display = 'none';

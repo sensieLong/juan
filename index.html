@@ -12,11 +12,12 @@
     <div id="menuContainer">
         <div id="logo"><img id="logoImage" src=".\devImages\myLogo.png" alt="myLogo" /></div>
         <div id="myMenu">
-            <div class="menuTitle">About</div>
-            <div class="menuTitle">Arts</div>
-            <div class="menuTitle">Vlogs</div>
+            <div class="menuTitle" id="mainHome">Home</div>
+            <div class="menuTitle" id="mainArts">Arts</div>
+            <div class="menuTitle" id="mainVlogs">Vlogs</div>
         </div>
     </div>
+
     <section id="slideShowSection">
         <!-- slideshow starts -->
         <!-- Slideshow container -->
@@ -56,6 +57,10 @@
 
         <!-- slideshow end -->
         <!-- put images on a div to have access to click event in javascript-->
+    </section>
+
+    <section id="clickInstructionContainer">
+        <div id="clickInstruction"> Click the image to expand</div>
     </section>
     <div id="artsDivParent">
         <div id="show1">
@@ -203,11 +208,26 @@
                 <br />
                 The same as making brochures or books, you need accurate page numbers to navigate pages even up to 1k or more pages.<br />
                 In this case i used software to auto numbering each pages accurately so you don't need to worry on number mistakes because it is software based.
-            
+
             </p>
             <img src=".\devImages\brochureCover.jpeg" alt="banner1" />
             <img src=".\devImages\rotary.png" alt="banner2" />
             <img src=".\devImages\invitations.jpg" alt="banner3" />
+        </div>
+
+        <div id="imagePopUp1">
+            <h1 class="storyH1">Showcase 1</h1>
+            <img src=".\devImages\mainCover.jpg" style="width:100%" alt="slide1" />
+        </div>
+
+        <div id="imagePopUp2">
+            <h1 class="storyH1">Showcase 2</h1>
+            <img src=".\devImages\mainCover2.jpg" style="width:100%" alt="slide2" />
+        </div>
+
+        <div id="imagePopUp3">
+            <h1 class="storyH1">Showcase 3</h1>
+            <img src=".\devImages\mainCover3.jpg" style="width:100%" alt="slide3" />
         </div>
 
     </section>
