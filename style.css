@@ -4,6 +4,11 @@ html, body {
     width: auto;
 }
 
+.bluredThis {
+    filter: blur(10px);
+    transition: 1s;
+}
+
 #menuContainer {
     position: relative;
     width: auto;
@@ -399,6 +404,9 @@ html, body {
     display: none;
 }
 #aboutShowCase2 {
+    display: none;
+}
+#aboutShowCase2portrait {
     display: none;
 }
 
