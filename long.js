@@ -74,7 +74,6 @@ function mainMenuHome() {
     document.getElementById('aboutShowCase').style.display = 'none';
     document.getElementById('aboutShowCase2').style.display = 'none';
     document.getElementById('clickInstruction').style.display = 'block';
-    document.getElementById('footerInfo').style.display = 'flex';
     document.getElementById('aboutShowCase2portrait').style.display = 'none';
 
     document.body.style.backgroundColor = 'white';
@@ -102,7 +101,6 @@ function mainMenuArts() {
     document.getElementById('aboutShowCase').style.display = 'none';
     document.getElementById('aboutShowCase2').style.display = 'none';
     document.getElementById('clickInstruction').style.display = 'block';
-    document.getElementById('footerInfo').style.display = 'none';
     document.getElementById('aboutShowCase2portrait').style.display = 'none';
 
     document.body.style.backgroundColor = '#f1f1f1';
@@ -133,7 +131,6 @@ function mainMenuAbout() {
     document.getElementById('artsDivParent').style.display = 'none';
     document.getElementById('clickInstruction').style.display = 'none';
     document.getElementById('aboutShowCase').style.display = 'block';
-    document.getElementById('footerInfo').style.display = 'flex';
 
     document.getElementById('aboutShowCase2portrait').style.display = 'block';
 
